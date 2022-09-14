@@ -17,7 +17,10 @@ def exists_word(word, instance):
                     "ocorrencias": occurrences,
                 }
             )
+        else:
+            return []
 
+    print(files)
     return files
 
 
