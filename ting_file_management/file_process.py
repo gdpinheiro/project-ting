@@ -15,7 +15,7 @@ def process(path_file, instance):
         "linhas_do_arquivo": current_file,
     }
 
-    sys.stdout.write(processed_file)
+    print(processed_file, file=sys.stdout)
 
 
 def remove(instance):
@@ -24,7 +24,7 @@ def remove(instance):
 
     file_name = instance.dequeue()["nome_do_arquivo"]
 
-    sys.stdout.write(f"Arquivo {file_name} removido com sucesso")
+    print(f"Arquivo {file_name} removido com sucesso", file=sys.stdout)
 
 
 def file_metadata(instance, position):
