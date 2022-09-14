@@ -2,7 +2,7 @@ def exists_word(word, instance):
     files = []
     occurrences = []
 
-    for i in range(len(instance.data)):
+    for i in range(len(instance)):
         for index, line in enumerate(instance.search(i)["linhas_do_arquivo"]):
             lower_word = word.lower()
             lower_line = line.lower()
